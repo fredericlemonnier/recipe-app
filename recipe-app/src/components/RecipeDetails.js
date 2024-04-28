@@ -14,7 +14,18 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-
+const Button = styled.button`
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
 
 function RecipeDetails() {
     const { id } = useParams();
@@ -92,7 +103,8 @@ function RecipeDetails() {
         <Container>
             <Title>{recipe.title}</Title>
             <audio ref={audioRef} src="/davoodi.m4a" preload="auto"></audio>
-
+            <button style={{margin: '10px 0'}}>Recipe Instructions</button>
+            <Button>Recipe styles</Button>
             <br></br>
             <button onClick={toggleFavorite} style={{margin: '10px 0'}}>
                 {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
