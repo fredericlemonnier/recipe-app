@@ -103,8 +103,7 @@ function RecipeDetails() {
         <Container>
             <Title>{recipe.title}</Title>
             <audio ref={audioRef} src="/davoodi.m4a" preload="auto"></audio>
-            <button style={{margin: '10px 0'}}>Recipe Instructions</button>
-            <Button>Recipe styles</Button>
+
             <br></br>
             <button onClick={toggleFavorite} style={{margin: '10px 0'}}>
                 {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
