@@ -14,18 +14,7 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-const Button = styled.button`
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
+
 
 function RecipeDetails() {
     const { id } = useParams();
